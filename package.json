@@ -1,0 +1,15 @@
+{
+  "main": "index.js",
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "jasmine": "^5.1.0",
+    "jest": "^29.7.0",
+    "mocha": "^10.4.0"
+  },
+  "scripts": {
+    "jasmine": "jasmine --config=./spec/support/jasmine.json",
+    "jasmine_parallel": "jasmine --parallel=4 --config=./spec/support/jasmine_parallel.json",
+    "jest": "jest --roots ./spec/jest --maxWorkers=4",
+    "mocha": "mocha --parallel --jobs 4 spec ./spec/mocha"
+  }
+}
